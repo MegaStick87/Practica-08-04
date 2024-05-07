@@ -1,0 +1,48 @@
+body {
+    background-image: linear-gradient(to right top, #c1dff0, #a6d1ee, #8bc3ec, 
+    #70b4e9, #55a6e7, #6a92e5, #7f7ee4, #936be2, #a24ddc, #ae2ed5, #b60ecf, #be00c9);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    height: 100vh; /* Asegura de que el fondo cubra toda la altura de la vista */
+    display: flex; /* Usamos flexbox para centrar el formulario */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+  }
+  
+  form {
+    background: rgba(255, 255, 255, 0.25); /* Fondo blanco con transparencia */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque del fondo */
+    border-radius: 10px; /* Bordes redondeados para el formulario */
+    padding: 2rem; /* Espacio interno */
+    width: 50%; /* Anchura del formulario */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    background: rgba(255, 255, 255, 0.5); /* Fondo de los inputs ligeramente más opaco que el formulario */
+    border: none; /* Sin bordes */
+    border-bottom: 2px solid #fff; /* Borde inferior simulando un efecto de profundidad */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    padding: 10px; /* Espacio interno para los textos */
+    margin-bottom: 1rem; /* Espacio entre los campos de texto */
+    width: calc(100% - 20px); /* Anchura completa menos el padding */
+  }
+  
+  input[type="button"],
+  button {
+    background: rgba(255, 255, 255, 0.85); /* Fondo de los botones menos transparente */
+    border: 1px solid rgba(255, 255, 255, 0.6); /* Borde con transparencia */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espacio interno */
+    cursor: pointer; /* Cursor en forma de mano al pasar sobre el botón */
+    margin-right: 10px; /* Espacio entre los botones */
+  }
+  
+  input[type="button"]:hover,
+  button:hover {
+    background: rgba(255, 255, 255, 1); /* Cambio de fondo al pasar el ratón por encima */
+  }
+  
+  

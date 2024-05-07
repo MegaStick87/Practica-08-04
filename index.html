@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Esta declaración define que el documento es de tipo HTML5 -->
+<html lang="es">
+<!-- La etiqueta <html> comienza el documento HTML. El atributo 'lang="es"' especifica que el idioma del documento es español -->
+
+<head>
+    <!-- La sección <head> contiene metadatos del documento que no son visibles en la página -->
+    <meta charset="UTF-8">
+    <!-- Esta etiqueta meta especifica la codificación de caracteres para el documento, UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Esta etiqueta meta controla la ventana gráfica del navegador para hacer que el diseño sea responsivo en dispositivos móviles -->
+    <title>Formulario</title>
+    <!-- El título del documento, que aparece en la pestaña del navegador -->
+    <link rel="icon" type="image/png" href="img/form.png">
+    <!-- Define un ícono para la pestaña del navegador -->
+    <link rel="stylesheet" href="/style.css"/>
+    <!-- Vincula una hoja de estilos CSS externa al documento para aplicar estilos personalizados -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconecta con Google Fonts para reducir la latencia al cargar las fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconecta con el dominio de Google Fonts para fuentes, usando CORS para solicitudes cruzadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Importa la fuente 'Montserrat' de Google Fonts para usarla en la página -->
+</head>
+
+<body>
+    <!-- El cuerpo del documento, que contiene el contenido visible de la página -->
+    <form id="myForm">
+        <!-- Formulario para recolectar datos del usuario -->
+        <label for="fname">Nombre: </label><br />
+        <input type="text" id="fname" name="fname" required /> <br />
+        <br />
+        <label for="lname">Apellido: </label><br />
+        <input type="text" id="lname" name="lname" required /> <br />
+
+        <label for="email">Correo Electrónico: </label><br />
+        <input type="email" id="email" name="email" required /> <br />
+
+        <label for="rfc">Registro Federal de Contribuyentes: </label><br />
+        <input type="text" id="rfc" name="rfc" required /> <br />
+        <br />
+        
+        <input type="button" value="Guardar como PDF" onclick="generatePDF()" />
+        <!-- Botón para generar un PDF con los datos ingresados -->
+        <button onclick="agregarElemento()">Agrega un elemento</button>
+        <!-- Botón para agregar un elemento dinámicamente al formulario -->
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"> </script>
+    <!-- Importa la librería jsPDF para la creación de documentos PDF -->
+    <script src="script.js"></script>
+    <!-- Vincula un archivo JavaScript externo para controlar la interactividad del formulario -->
+</body>
+<!-- Esta etiqueta cierra el <body>, que es donde termina el contenido visible de la página. -->
+</html>
+<!-- Esta etiqueta cierra el documento HTML. -->
